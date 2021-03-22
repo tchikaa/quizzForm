@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <h1>Quizz Javascript !</h1>
+   
+  <div class="container-global">
+    <p>Let's review the javascript methods used to create this form</p>
+
+    <form class="form-quizz">
+
+          <div class="question-block">
+            <h4>What will the following code return : </h4>
+             
+                <p><stong>var el</stong> = document.<span class="red">querySelector</span><span class="green"> ( ".maclasse" )</span></p> 
+                
+            <div>
+                <input type="radio" id="allElements" name="q1" value="a">
+                <label for="allElements"> All the elements having a class "maclass"</label>
+            </div>
+            <div>
+                <input type="radio" id="firstElement" name="q1" value="b"checked>
+                    <label for="firstElement">The first element in the document that contains the "maclass" class
+                    </label>
+                </div>
+            <div>
+                <input type="radio" id="nothing" name="q1" value="c">
+                <label for="nothing">Nothing document.querySElector doesn't exist</label>
+            </div>
+            
+        </div>
+
+        <div class="question-block">
+            <h4>How does a FOR loop start?</h4>
+            
+            <div>
+                <input type="radio" id="rep1" name="q2" value="a" checked>
+                <label for="rep1">for (i=0; i <=5 )</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="rep2" name="q2" value="b">
+                <label for="rep2">for i = 1 to 5</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="rep3" name="q2" value="c">
+                <label for="rep3">for (i=0 ; i<=5 ; i++)</label>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <h4>What is the correct way to write a JavaScript array?</h4>
+            <div>
+                <input type="radio" id="metho1" name="q3" value="a" checked>
+                <label for="method1">var colors = "red, "green, "blue"</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="method2" name="q3" value="b">
+                <label for="method2">var colors = ["red,"green, "blue"]</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="method3" name="q3" value="c">
+                <label for="method3">var colors = (1:"red, 2: green, 3: bleu)</label>
+            </div>
+        </div>
+
+
+        <div class="question-block">
+            <h4>How do you round the number 7.25, to the nearest integer?</h4>
+
+            <div>
+                <input type="radio" id="rnd" name="q4" value="a" checked>
+                <label for="rnd">rnd(7.25)</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="mathRound" name="q4" value="b">
+                <label for="mathRound">Math.round(7.25)</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="round" name="q4" value="c">
+                <label for="round">round(7.25)</label>
+            </div>
+        </div>
+
+
+        <div class="question-block">
+            <h4>Which event occurs when the user clicks on an HTML element?</h4>
+            <div>
+                <input type="radio" id="change" name="q5" value="a"
+                    checked>
+                <label for="change">onchange</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="mousse" name="q5" value="b">
+                <label for="mousse">onmouseover</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="click" name="q5" value="c">
+                <label for="click">onclick</label>
+            </div>
+        </div>
+
+        <button type="submit">Validate your choices!</button>
+    </form>
+
+    <div class="resultats">
+      <h2>Click on validate to see the results.</h2>
+      <p class="aide"></p>
+      <p class="note"></p>
+    </div>
+  </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
